@@ -1,0 +1,24 @@
+{
+  "name": "helper-kit",
+  "version": "1.0.2",
+  "description": "HelperKit provides a robust set of utilities for managing and manipulating data and date/time values in TypeScript. With classes like DataToolkit and DateTimekit, this library simplifies common operations such as deep merging of objects, formatting and comparing dates, and handling arrays and objects efficiently. Ideal for developers seeking to streamline their data processing and date/time handling tasks with reliable and reusable code.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "nodemon dist/index.js",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "typescript": "^5.5.4"
+  },
+  "compilerOptions": {
+    "types": ["node"]
+  }
+}
