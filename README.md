@@ -60,7 +60,7 @@ console.log(mergeObjects);
 
 We welcome contributions to the library! To contribute:
 
-1. Fork the repository.
+1. Fork the [repository](https://github.com/TARasti/HelperKit).
 2. Create a new branch (`git checkout -b feature/YourFeature`).
 3. Make your changes.
 4. Commit your changes (`git commit -am 'Add new feature'`).

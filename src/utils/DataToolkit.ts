@@ -283,4 +283,47 @@ export class DataToolkit {
         });
     }
 
+    // Convert a string first letter to capital
+    static firstLetterCapital = (str: string): string => {
+        const arr: string[] = str.split(" ");
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+        }
+        return arr.join(" ");
+    };
+
+    // Convert a string to TitleCase
+    static toTitleCase = (str: string = ''): string => {
+        const arr: string[] = str.split(' ');
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1).toLowerCase();
+        }
+        return arr.join(' ');
+    };
+
+    // Convert a string to PascalCase
+    static toPascalCase = (str: string): string => {
+        return str
+            .split(" ")
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+            .join("");
+    };
+
+    // Convert a string to camelCase
+    static toCamelCase = (str: string): string => {
+        const words = str.split(" ");
+        return words[0].toLowerCase() + words
+            .slice(1)
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+            .join("");
+    };
+
+    // Convert a string to snake_case
+    static toSnakeCase = (str: string): string => {
+        return str
+            .split(" ")
+            .map(word => word.toLowerCase())
+            .join("_");
+    };
+
 }

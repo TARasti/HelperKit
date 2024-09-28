@@ -113,4 +113,9 @@ export declare class DataToolkit {
  * console.log(uuid); // Output: "123e4567-e89b-12d3-a456-426614174000"
  */
     static generateUUID(): string;
+    static firstLetterCapital: (str: string) => string;
+    static toTitleCase: (str?: string) => string;
+    static toPascalCase: (str: string) => string;
+    static toCamelCase: (str: string) => string;
+    static toSnakeCase: (str: string) => string;
 }
